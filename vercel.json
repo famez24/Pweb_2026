@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
+    { "source": "/", "destination": "/Quiz1/index.html" },
     { "source": "/quiz1", "destination": "/Quiz1/index.html" },
     { "source": "/quiz1/", "destination": "/Quiz1/index.html" },
     { "source": "/quiz1/profile", "destination": "/Quiz1/profile/index.html" },
