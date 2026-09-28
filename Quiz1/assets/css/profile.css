@@ -1,0 +1,245 @@
+:root {
+  --page-blue: #edf7fb;
+  --soft-blue: #dceff6;
+  --ink-blue: #163d58;
+  --muted-blue: #557286;
+  --line-blue: #c8e1eb;
+  --white: #ffffff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--page-blue) 0%, var(--white) 72%);
+  color: var(--ink-blue);
+}
+
+.navbar {
+  background: rgba(237, 247, 251, 0.92) !important;
+  border-bottom: 1px solid var(--line-blue);
+}
+
+.navbar-brand {
+  color: var(--ink-blue);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+#profile-img {
+  width: 420px;
+  height: auto;
+  border: 2px solid #c8e1eb;
+  padding: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar .nav-link {
+  color: var(--muted-blue);
+  transition: color 0.25s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--ink-blue);
+}
+
+.navbar .nav-link.active {
+  color: var(--ink-blue);
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  border-color: var(--line-blue);
+}
+
+.navbar-toggler-icon {
+  filter: invert(25%) sepia(18%) saturate(1039%) hue-rotate(162deg);
+}
+
+main > section:first-child {
+  background: transparent !important;
+  padding-top: 7rem !important;
+}
+
+.text-primary {
+  color: #4d839c !important;
+}
+
+h1,
+h2 {
+  color: var(--ink-blue);
+  font-size: 2.5rem !important;
+}
+
+p,
+.lead {
+  color: var(--muted-blue);
+}
+
+.education-timeline {
+  position: relative;
+  display: flex;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+  padding-top: 2rem;
+  overflow-x: auto;
+}
+
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--line-blue);
+  z-index: 1;
+}
+
+.education-block {
+  margin-top: 2.5rem;
+}
+
+.education-block h2 {
+  font-size: 1.8rem !important;
+  margin-bottom: 0;
+}
+
+.education-item {
+  flex: 1 0 6.5rem;
+  position: relative;
+}
+
+.education-item + .education-item {
+  margin-top: 0;
+}
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  top: -1.95rem;
+  left: 30%;
+  width: 0.9rem;
+  height: 0.9rem;
+  background: var(--page-blue);
+  border: 3px solid #4d839c;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.education-year {
+  color: #4d839c;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.education-item h3 {
+  color: var(--ink-blue);
+  font-size: 1.3rem;
+  margin-bottom: 0.35rem;
+}
+
+.education-item p {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+.skills-block {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.skills-block h2,
+.experience-block h2 {
+  font-size: 1.8rem !important;
+  margin-bottom: 1.1rem;
+}
+
+.experience-block {
+  margin-top: 4.5rem;
+  width: 100%;
+}
+
+.skills-list {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-item {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line-blue);
+  border-radius: 0.65rem;
+  color: var(--ink-blue);
+  font-size: clamp(0.58rem, 1.1vw, 0.85rem);
+  font-weight: 600;
+  min-width: 0;
+  padding: 0.65rem 0.25rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.experience-list {
+  display: grid;
+  gap: 1.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience-item {
+  align-items: flex-start;
+  color: var(--ink-blue);
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.25rem;
+  text-align: left;
+}
+
+.experience-item::before {
+  content: "•";
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.experience-details {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.experience-details span {
+  overflow-wrap: anywhere;
+}
+
+.experience-year {
+  color: #4d839c;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.experience-position {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.experience-event {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #496572;
+}
+
+.experience-description {
+  font-size: 1rem;
+}
+
+footer {
+  background: var(--ink-blue) !important;
+}

@@ -1,0 +1,145 @@
+:root {
+  --page-blue: #edf7fb;
+  --soft-blue: #dceff6;
+  --ink-blue: #163d58;
+  --muted-blue: #557286;
+  --line-blue: #c8e1eb;
+  --white: #ffffff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--page-blue) 0%, var(--white) 72%);
+  color: var(--ink-blue);
+  min-height: 100vh;
+}
+
+.homepage-nav {
+  background: rgba(237, 247, 251, 0.92);
+  border-bottom: 1px solid var(--line-blue);
+}
+
+.homepage-nav .navbar-brand {
+  color: var(--ink-blue);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.homepage-nav .nav-link {
+  color: var(--muted-blue);
+  transition: color 0.25s ease;
+}
+
+.homepage-nav .nav-link:hover {
+  color: var(--ink-blue);
+}
+
+.homepage-nav .nav-link.active {
+  color: var(--ink-blue);
+  font-weight: 700;
+}
+
+.homepage-nav .navbar-toggler {
+  border-color: var(--line-blue);
+}
+
+.homepage-nav .navbar-toggler-icon {
+  filter: invert(25%) sepia(18%) saturate(1039%) hue-rotate(162deg);
+}
+
+.intro-section {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.profile-frame {
+  background: var(--white);
+  border: 1px solid var(--line-blue);
+  border-radius: 50%;
+  padding: 0.95rem;
+  max-width: 400px;
+  box-shadow: 0 16px 40px rgba(49, 101, 126, 0.1);
+}
+
+.profile-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 200%;
+  border-radius: 50%;
+}
+
+.eyebrow {
+  color: #4d839c;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.intro-copy h1 {
+  color: var(--ink-blue);
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  letter-spacing: 0;
+  line-height: 1.02;
+  margin: 0.8rem 0 1.4rem;
+}
+
+.intro-copy .description {
+  color: var(--muted-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  max-width: 35rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  gap: 2rem;
+  margin-top: 2.2rem;
+}
+
+.contact-icon {
+  align-items: center;
+  background: var(--soft-blue);
+  border-radius: 50%;
+  color: #28617d;
+  display: inline-flex;
+  flex: 0 0 2.65rem;
+  height: 2.65rem;
+  justify-content: center;
+  width: 2.65rem;
+}
+
+.contact-label {
+  color: var(--muted-blue);
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.contact-value {
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .intro-section {
+    min-height: auto;
+    padding: 3.5rem 0 4rem;
+  }
+
+  .profile-frame {
+    margin: 0 auto 2.5rem;
+    max-width: 360px;
+  }
+
+  .intro-copy h1 {
+    font-size: 3.25rem;
+  }
+}
