@@ -1,0 +1,11 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/quiz1", "destination": "/Quiz1/index.html" },
+    { "source": "/quiz1/", "destination": "/Quiz1/index.html" },
+    { "source": "/quiz1/profile", "destination": "/Quiz1/profile/index.html" },
+    { "source": "/quiz1/hometown", "destination": "/Quiz1/hometown/index.html" },
+    { "source": "/quiz1/food", "destination": "/Quiz1/food/index.html" },
+    { "source": "/quiz1/tourist", "destination": "/Quiz1/tourist/index.html" }
+  ]
+}
